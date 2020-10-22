@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.first{
+			position: relative;
+			background: #FFFFFF;
+			padding: 45px;
+			text-align: center;
+		}
+		.first button{
+			background: #007bff;
+			cursor: pointer;
+			color: #FFFFFF;
+			transition: all 0.3 ease;
+		}
+		body{
+			font-family: sans-serif;
+			background-color: pink;
+		}
+	</style>
+	<script type="text/javascript">
+		function hello()
+		{
+			alert("values taken successfully")
+			//redirecting??
+		}
+	</script>
+	<title>LOGIN</title>
+</head>
+<body>
+	<div class="first">
+		<form action="sample.php" method="post"  onsubmit="hello()">
+			<label for="email">
+				<input type="email" name="email" id="email" placeholder="email" required="email">
+			</label>
+			<label for="password">
+				<input type="password" name="password" id="pass" placeholder="*******" required="password">
+			</label>
+					<button name="submit" type="submit">log-in</button>
+							<p>not a member?<a href="sample.html">log-in</a></p>
+		</form>
+	</div>
+</body>
+</html>
